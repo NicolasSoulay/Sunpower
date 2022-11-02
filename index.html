@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="page d'accueil du site vitrine de SunPower">
+        <meta name="author" content="Christine PRADE, Enzo RUFFIN, Nicolas SOULAY">
+        <title>Accueil</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/font.css">
+        <link rel="stylesheet" href="./css/activity_carousel.css">
+        <link rel="stylesheet" href="./css/article.css">
+        <link rel="stylesheet" type="text/css" href="./css/footer.css">
+        <link rel="stylesheet" type="text/css" href="./css/footer_responsive.css">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="./css/media.css">
+        <script src="./js/activity_carousel.js" defer></script>
+        <script src="./js/navbar.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <div class="sideMenu">
+            <nav>
+                <ul class="sideMenuList">
+                    <li><a href="./company.html">Notre Entreprise</a></li>
+                    <li><a href="./map.html">Carte interactive</a></li>
+                    <li><a href="./generic_form.html">Nous Contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header class="header">
+            <div class="logo" onclick="location.href='index.html';"></div>
+            <nav class="liens">
+                <ul>
+                    <li><a href="./company.html">Notre Entreprise</a></li>
+                    <li><a href="./map.html">Carte interactive</a></li>
+                    <li><a href="./generic_form.html">Nous Contacter</a></li>
+                </ul>
+            </nav>
+            <nav class="icones">
+                <ul>
+                    <li>
+                        <div class="burguermenu"></div>
+                    </li>
+                    <li class="searchBarContainer">
+                        <div class="openSearchBar"></div>
+                        <form id="search">
+                            <input type="search" class="searchBarInput" placeholder="Recherchez"
+                                aria-label="Rechercher parmi le contenu du site">
+                        </form>
+                    </li>
+                    <li>
+                        <div class="facebook"></div>
+                    </li>
+                    <li>
+                        <div class="mail"></div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <!-- BANNIERE AVEC ACTIVITÉS -->
+
+            <section class="activity">
+                <h1>Nos secteurs d'activités :</h1>
+
+                <div class="carousel">
+
+                    <button type="button" class="arrow" onclick="appuiGauche()">
+                        <img src="../src/img/arrowcircleleft.svg" alt="arrowcircleleft">
+                    </button>
+
+                    <ul class="cards" onclick="display_article()">
+                        <li class="activity_card" id="solar_card">
+                            <h2>Energie solaire</h2>
+                            <img src="./src/img/sun-energy.png" alt="solar">
+                        </li>
+                        <li class="activity_card" id="power_card">
+                            <h2>Électronique de puissance</h2>
+                            <img src="./src/img/electric-panel.png" alt="powerelec">
+                        </li>
+                        <li class="activity_card" id="elec_card">
+                            <h2>Électronique embarquée</h2>
+                            <img src="./src/img/circuit.png" alt="electronic">
+                        </li>
+                        <li class="activity_card" id="battery_card">
+                            <h2>Battery Management System®</h2>
+                            <img src="./src/img/recycling.png" alt="battery">
+                        </li>
+                    </ul>
+
+                    <button type="button" class="arrow" onclick="appuiDroite()">
+                        <img src="../src/img/arrowcircleright.svg" alt="arrowcircleright">
+                    </button>
+
+                </div>
+            </section>
+
+
+
+            <!-- ARTICLES -->
+
+            <section class="articles">
+
+                <!-- ARTICLE /BANNIERE -->
+                <article id="battery_article" class="pop_article">
+                    <h3>Battery Management System®</h3>
+                    <div class="partner">
+                        <img src="./src/img/partenaires/Groupe_PSA_logo.png" alt="psa" class="logopartner">
+                        <img src="./src/img/partenaires/CEA_logo_nouveau.png" alt="cea" class="logopartner">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa sed dolorum, odit non officiis
+                        molestiae veritatis fugit quod, rerum veniam voluptas tenetur voluptate corrupti optio excepturi
+                        nesciunt quia quas aut.
+                        Deserunt eum numquam fugiat sit velit. Cupiditate, voluptatem unde porro tempora at autem,
+                        placeat, id nemo asperiores repellat dolorem? Iusto, officia voluptate. Odit voluptas cum ab
+                        error praesentium dolore quaerat!
+                        Accusantium sunt excepturi, eius animi, deleniti, commodi ut explicabo similique id dolorum
+                        alias! Et molestias beatae quasi quo, ipsam debitis dolor? Reiciendis, eius corrupti! Laboriosam
+                        dignissimos dolorem laudantium earum nobis?
+                        Ipsa amet illum quas nisi quia impedit ex laudantium velit rem cumque eos libero itaque harum
+                        perspiciatis id, veniam eaque quod porro at ratione, magni nostrum modi. Officia, deleniti
+                        labore.
+                        Aliquid sapiente, adipisci consectetur perspiciatis delectus quis eum hic iusto ipsam nesciunt
+                        fugiat modi ab impedit molestias quia placeat eos commodi nostrum. Iure magnam, et rerum
+                        possimus maxime quod officia.
+                        Eius minus beatae suscipit quibusdam fugit quae veritatis quam ab harum unde exercitationem
+                        aperiam sequi magni voluptates, ducimus accusantium repellat sapiente aut asperiores nisi minima
+                        esse! A aliquam molestiae consequuntur?
+                        Rem fugiat, perferendis assumenda deleniti neque modi. Ipsam enim excepturi veritatis alias
+                        aspernatur molestias in! Dolorum perferendis voluptatibus porro quos eaque, nisi ratione vitae
+                        consequuntur accusantium vel necessitatibus, vero tempora!
+                        Sequi, illum facere. Est qui sunt dicta, sed quis nisi eveniet fugiat laborum deserunt nulla
+                        laudantium? Optio consequuntur ut porro, dolorum unde corrupti vero maiores ipsam quaerat.
+                        Recusandae, libero eligendi?
+                        Id blanditiis laudantium aspernatur iure eligendi, cupiditate adipisci recusandae vel
+                        dignissimos, repellat, dolorem consequatur suscipit earum autem? Obcaecati eaque accusamus
+                        numquam sint dignissimos laudantium impedit pariatur fugit. Sit, debitis reiciendis!
+                        Voluptatibus, cum neque earum assumenda blanditiis nesciunt quod fuga, vero corporis similique,
+                        facilis laboriosam minima necessitatibus eveniet enim. Vitae impedit aperiam at ducimus nesciunt
+                        dolor eos voluptas, pariatur labore architecto!
+                    </p>
+                    <div class="btn_container">
+                        <a href="./perdu.html" class="btn">En savoir plus</a>
+                    </div>
+
+                    <div class="hr_container">
+                        <hr>
+                    </div>
+
+                </article>
+
+                <article id="solar_article" class="pop_article">
+                    <h3>Les ombrières, c'est beau c'est bien</h3>
+                    <div class="partner">
+                        <img src="./src/img/partenaires/occitanie.png" alt="occitanie" class="logopartner">
+                        <img src="./src/img/partenaires/agglomtp.png" alt="agglomeration de montpellier" class="logopartner">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa sed dolorum, odit non officiis
+                        molestiae veritatis fugit quod, rerum veniam voluptas tenetur voluptate corrupti optio excepturi
+                        nesciunt quia quas aut.
+                        Deserunt eum numquam fugiat sit velit. Cupiditate, voluptatem unde porro tempora at autem,
+                        placeat, id nemo asperiores repellat dolorem? Iusto, officia voluptate. Odit voluptas cum ab
+                        error praesentium dolore quaerat!
+                        Accusantium sunt excepturi, eius animi, deleniti, commodi ut explicabo similique id dolorum
+                        alias! Et molestias beatae quasi quo, ipsam debitis dolor? Reiciendis, eius corrupti! Laboriosam
+                        dignissimos dolorem laudantium earum nobis?
+                        Ipsa amet illum quas nisi quia impedit ex laudantium velit rem cumque eos libero itaque harum
+                        perspiciatis id, veniam eaque quod porro at ratione, magni nostrum modi. Officia, deleniti
+                        labore.
+
+                    </p>
+                    <div class="btn_container">
+                        <a href="./solar_page.html" class="btn">En savoir plus</a>
+                    </div>
+                    <div class="hr_container">
+                        <hr>
+                    </div>
+
+
+                </article>
+
+                <article id="elec_article" class="pop_article">
+                    <h3>Electronique embarquée</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa sed dolorum, odit non officiis
+                        molestiae veritatis fugit quod, rerum veniam voluptas tenetur voluptate corrupti optio excepturi
+                        nesciunt quia quas aut.
+                        Deserunt eum numquam fugiat sit velit. Cupiditate, voluptatem unde porro tempora at autem,
+                        placeat, id nemo asperiores repellat dolorem? Iusto, officia voluptate. Odit voluptas cum ab
+                        error praesentium dolore quaerat!
+                        Accusantium sunt excepturi, eius animi, deleniti, commodi ut explicabo similique id dolorum
+                        alias! Et molestias beatae quasi quo, ipsam debitis dolor? Reiciendis, eius corrupti! Laboriosam
+                        dignissimos dolorem laudantium earum nobis?
+                        Ipsa amet illum quas nisi quia impedit ex laudantium velit rem cumque eos libero itaque harum
+                        perspiciatis id, veniam eaque quod porro at ratione, magni nostrum modi. Officia, deleniti
+                        labore.
+
+                    </p>
+                    <div class="btn_container">
+                        <a href="./perdu.html" class="btn">En savoir plus</a>
+
+                    </div>
+                    <div class="hr_container">
+                        <hr>
+                    </div>
+
+                </article>
+
+                <article id="power_article" class="pop_article">
+                    <h3>Electronique de puissance</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa sed dolorum, odit non officiis
+                        molestiae veritatis fugit quod, rerum veniam voluptas tenetur voluptate corrupti optio excepturi
+                        nesciunt quia quas aut.
+                        Deserunt eum numquam fugiat sit velit. Cupiditate, voluptatem unde porro tempora at autem,
+                        placeat, id nemo asperiores repellat dolorem? Iusto, officia voluptate. Odit voluptas cum ab
+                        error praesentium dolore quaerat!
+                        Accusantium sunt excepturi, eius animi, deleniti, commodi ut explicabo similique id dolorum
+                        alias! Et molestias beatae quasi quo, ipsam debitis dolor? Reiciendis, eius corrupti! Laboriosam
+                        dignissimos dolorem laudantium earum nobis?
+                        Ipsa amet illum quas nisi quia impedit ex laudantium velit rem cumque eos libero itaque harum
+                        perspiciatis id, veniam eaque quod porro at ratione, magni nostrum modi. Officia, deleniti
+                        labore.
+
+                    </p>
+                    <div class="btn_container">
+                        <a href="./perdu.html" class="btn">En savoir plus</a>
+
+                    </div>
+                    <div class="hr_container">
+                        <hr>
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- PRESENTATION ENTREPRISE -->
+                <article id="company_history" class="center_article">
+                    <h3>Une entreprise dynamique fondée en 2013</h3>
+                    <div class="patrons">
+                        <div class="pp-patron Pareneinstein">
+                            <h4>Alex Pareneinstein</h4>
+                        </div>
+                        <div class="pp-patron Oppenheimer">
+                            <h4>Hugo Oppenheimer</h4>
+                        </div>
+                        <div class="pp-patron Turing">
+                            <h4>Serge Turing</h4>
+                        </div>
+
+                    </div>
+                    <div class="btn_container">
+                        <a href="./company.html" class="btn">Découvrez notre entreprise</a>
+                    </div>
+
+                </article>
+
+                <hr>
+
+                <!-- MAP INTERACTIVE -->
+                <article id="interactive_map" class="center_article">
+                    <h3>Une implementation grandissante sur le bassin Montpellierain</h3>
+                    <div class="btn_container" id="btn_map">
+                        <a href="./map.html" class="btn">Visitez notre carte interactive</a>
+                    </div>
+                    <div class="statistiquesEntreprise">
+                        <ul>
+                            <li>
+                                <div class="ct-capital">0</div>
+                                <p>Nombre d'ombrières installés sur Montpellier</p>
+                            </li>
+                            <li>
+                                <div class="ct-projet">0</div>
+                                <p>projets en cours de réalisation</p>
+                            </li>
+                            <li>
+                                <div class="ct-rendement">0</div>
+                                <p>kW.h générés</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <hr>
+
+
+                <!-- BOUTONS "NOUS CONTACTER" / ACHETE MA MERDE -->
+
+                <div class="btn_container" id="btn_devis">
+                    <a href="./pro_form.html" class="btn">Besoin d’un devis personalisé ou de conseil? Contactez
+                        nous!</a>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+
+        <footer>
+            <!-- Image logo Sunpower -->
+            <a href="./index.html" class="logo_sunpower" lang="en" role="img" aria-label="Image logo Sunpower"><img
+                    class="img_logo" src="src/img/logo_sunpower.svg" alt="logo_sunpower">
+            </a>
+
+            <!-- Première colonne "nos solutions" -->
+            <div class="solution">
+                <h4 role="text" aria-label="Titre nos solutions">Nos solutions</h1>
+
+                    <!-- Crée une ligne horizontale-->
+                    <hr class="footer_hr">
+
+                    <!-- Class catégorie regoupe tous les textes sous les titres h4 -->
+                    <div class="catégorie">
+                        <div>
+                            <a class="footer_link" href="./solar_page.html" role="link"
+                                aria-label="Accéder aux technologies de panneaux solaires">Ombrières
+                                solaires </a>
+                        </div>
+                        <div>
+                            <a class="footer_link" href="./perdu.html" role="link"
+                                aria-label="Accéder à l'électronique de puissance">Electronique de
+                                puissance</a>
+                        </div>
+                        <div>
+                            <a class="footer_link" href="./perdu.html" role="link"
+                                aria-label="Accéder à l'électronique embarqué">Electronique
+                                embarqué</a>
+                        </div>
+                        <div>
+                            <a class="footer_link" href="./perdu.html" role="link" lang="en"
+                                aria-label="Battery Management System">Battery
+                                Management
+                                System®</a>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Deuxième colonne "à propos de nous" -->
+            <div class="about">
+                <h4 role="text" aria-label="Titre a propos de nous">À propos de nous</h1>
+
+                    <!-- Crée une ligne horizontale-->
+                    <hr class="footer_hr">
+
+                    <!-- Class catégorie regoupe tous les textes sous les titres h1 -->
+                    <div class="catégorie">
+                        <div>
+                            <a class="footer_link" href="./company.html" role="link"
+                                aria-label="Accéder à nos valeurs">Nos valeurs</a>
+                        </div>
+                        <div>
+                            <a class="footer_link" href="./perdu.html" role="link"
+                                aria-label="Accéder aux innovations">Innovations</a>
+                        </div>
+                        <div>
+                            <a class="footer_link" href="./perdu.html" role="link"
+                                aria-label="Accéder aux termes général de ventes">Termes
+                                général de
+                                ventes</a>
+                        </div>
+                        <div>
+                            <a class="footer_link" href="./perdu.html" role="link"
+                                aria-label="Accéder aux mentions légales">Mentions
+                                légales</a>
+                        </div>
+                        <div>
+                            <a class="footer_link" href="./perdu.html" role="link"
+                                aria-label="Accéder à nos partenaires">Nos
+                                partenaires</a>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Troisème colonne "contactez-nous" + réseaux sociaux -->
+            <div class="contact">
+                <h4 role="text" aria-label="Titre contactez-nous">Contactez-nous</h1>
+
+                    <!-- Crée une ligne horizontale-->
+                    <hr class="footer_hr">
+
+                    <!-- Class catégorie regoupe tous les textes sous les titres h1 -->
+                    <div class="catégorie">
+                        <div><a class="footer_link" href="./perdu.html" role="link"
+                                aria-label="Accéder à l'onglet contact">Contact</a>
+                        </div>
+                        <div><a class="footer_link" href="./perdu.html" role="link"
+                                aria-label="Accéder à l'onglet emploi">Emploi</a></div>
+                        <div><a class="footer_link" href="./perdu.html" role="link"
+                                aria-label="Accéder à l'onglet actualités">Actualités</a></div>
+                    </div>
+
+                    <!-- Regroupe les 3 images des réseaux sociaux (Ytb, Fb, Mail) -->
+                    <div class="reseaux_sociaux" role="contentinfo" aria-label="Icones réseaux sociaux">
+                        <div class="icon_youtube">
+                            <a class="footer_link" href="./perdu.html" role="link"
+                                aria-label="Accéder au lien Youtube"><img src="src/img/playcircle.svg"
+                                    alt="icone_youtube"></a>
+                        </div>
+                        <div class="icon_facebook">
+                            <a class="footer_link" href="./perdu.html" role="link"
+                                aria-label="Accéder au lien Facebook"><img src="src/img/facebook.svg"
+                                    alt="icone_facebook"></a>
+                        </div>
+                        <div class="icon_mail">
+                            <a class="footer_link" href="./perdu.html" role="link"
+                                aria-label="Accéder au lien Mail"><img src="src/img/sms.svg" alt="icone_mail"></a>
+                        </div>
+                    </div>
+            </div>
+        </footer>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,387 @@
+/* DEBUT PAGE ENTREPRISE */
+
+.entreprise {
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.entrepriseTitleContainer {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.titleEntreprise {
+    width: 40%;
+    height: 100%;
+}
+
+.titleEntreprise h1 {
+    text-align: center;
+    color: #087ab6;
+    font-family: Audiowide, 'sans-serif';
+    letter-spacing: 2px;
+    font-size: 5em;
+    margin-top: 20px;
+}
+
+.titleEntreprise p {
+    text-align: center;
+    color: #000;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+.imageEntreprise {
+    width: 40%;
+    height: 90%;
+    background: url("../src/img/entreprise.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.imageEntreprise:hover {
+    height: 100%;
+}
+
+.statistiquesEntreprise {
+    width: 100%;
+    height: 30vh;
+    margin-top: 120px;
+}
+
+.statistiquesEntreprise ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+}
+
+.statistiquesEntreprise ul li {
+    color: #9b9b9b;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.statistiquesEntreprise ul li p {
+    color: #9b9b9b;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* partie emploi */
+
+.emploisContainer {
+    width: 100%;
+    height: 70vh;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.circleEmplois {
+    width: 30%;
+    height: 100%;
+}
+
+.bigCircle {
+    width: 300px;
+    height: 300px;
+    background: #0d7248;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigCircle p {
+    font-size: 2em;
+    color: #f1f1f1;
+    font-weight: 500;
+}
+
+.littleCircle {
+    width: 200px;
+    height: 200px;
+    background: #90d59f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin-top: -100px;
+}
+
+.littleCircle p {
+    color: #f1f1f1;
+}
+
+
+.txtEmplois {
+    width: 40%;
+    height: 100%;
+}
+
+.txtEmplois h2 {
+    float: right;
+    border-right: 2px solid #087ab6;
+    padding: 0px 10px;
+    margin: 15px 0px;
+    color: #006989;
+    font-size: 1.5em;
+    font-family: interm;
+    text-shadow: 0.03em 0.03em 0.05em rgba(0, 0, 0, 0.5);
+}
+
+.txtEmplois p {
+    float: right;
+    text-align: right;
+}
+
+/* partie economie */
+
+.economieContainer {
+    width: 100%;
+    height: 70vh;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mapEconomie {
+    width: 35%;
+    height: 100%;
+    background: url('../src/img/map.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: width 1s;
+}
+
+.mapEconomie:hover {
+    width: 37%;
+    cursor: pointer;
+}
+
+.txtEconomie {
+    width: 40%;
+    height: 100%;
+}
+
+.txtEconomie h2 {
+    float: left;
+    border-left: 2px solid #087ab6;
+    padding: 0px 10px;
+    margin: 15px 0px;
+    color: #006989;
+    font-size: 1.5em;
+    font-family: interm;
+    text-shadow: 0.03em 0.03em 0.05em rgba(0, 0, 0, 0.5);
+}
+
+.txtEconomie p {
+    float: left;
+    text-align: left;
+}
+
+/* une date, trois cerveaux */
+
+.titleDate {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+
+.titleDate h2 {
+    padding: 0px 20px;
+    border-left: 2px solid #087ab6;
+    color: #006989;
+    font-size: 1.5em;
+    font-family: interm;
+    text-shadow: 0.03em 0.03em 0.05em rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.5em;
+}
+
+.titleDate h3 {
+    opacity: 0;
+    font-size: 28px;
+}
+
+.listePatrons ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.pp-patron {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.listePatrons ul li p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pp-patron.Pareneinstein {
+    background: url('../src/img/Pareneinstein.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pp-patron.Oppenheimer {
+    background: url('../src/img/Oppenheimer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pp-patron.Turing {
+    background: url('../src/img/Turing.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.backgroundDate {
+    text-align: center;
+    position: relative;
+    top: -450px;
+    font-size: 35em;
+    font-weight: bold;
+    color: #9b9b9b4d;
+    max-height: auto;
+    user-select: none;
+    z-index: 1;
+}
+
+/* partenaires */
+
+.titlePartenaires {
+    position: relative;
+    top: -400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+
+.titlePartenaires h2 {
+    padding: 0px 20px;
+    border-left: 2px solid #087ab6;
+    color: #006989;
+    font-size: 1.5em;
+    font-family: interm;
+    text-shadow: 0.03em 0.03em 0.05em rgba(0, 0, 0, 0.5);
+}
+
+
+.containerPartenaires {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: -300px;
+    list-style: none;
+}
+
+.containerPartenaires.deux {
+    width: 100%;
+    position: relative;
+    top: -470px;
+    list-style: none;
+}
+
+.partenairesLogo {
+    white-space: nowrap;
+    width: 200px;
+    height: 200px;
+    margin: 0px 50px;
+    animation: defilement 20s linear infinite;
+}
+
+.partenairesLogo.deux {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: 200px;
+    height: 200px;
+    margin: 0px 50px;
+    animation: defilementDeux 40s linear infinite;
+}
+
+.aggloMtp {
+    background: url('../src/img/partenaires/agglomtp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cea {
+    background: url('../src/img/partenaires/CEA_logo_nouveau.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.psa {
+    background: url('../src/img/partenaires/Groupe_PSA_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tlseMetropole {
+    background: url('../src/img/partenaires/Logo_Toulouse_Metropole.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.occitanie {
+    background: url('../src/img/partenaires/occitanie.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes defilement {
+    0% {
+        transform: translate(-900%, 0);
+    }
+
+    100% {
+        transform: translate(900%, 0);
+    }
+}
+
+@keyframes defilementDeux {
+    0% {
+        transform: translate(-1800%, 0);
+    }
+
+    100% {
+        transform: translate(1800%, 0);
+    }
+}

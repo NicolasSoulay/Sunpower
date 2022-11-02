@@ -1,0 +1,459 @@
+/* Change les titre "Profitez d'un devis personnalisé */
+
+.h1_titre {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    padding-top: 0.5em;
+}
+
+
+/* Change le titre "Renseignements entreprises et collectivité */
+
+.h2_titre {
+    padding-top: 1em;
+    color: black;
+    font-size: 2em;
+    font-family: intereb;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+/* Change la ligne hoizontale */
+
+#hr_header {
+    width: 100%;
+}
+
+
+/* Change la bannière "Profitez d'un devis..." */
+
+.form_bannière {
+    background: linear-gradient(#ADEDD2, #F6F6F6, #FFFFFF);
+    text-align: center;
+}
+
+
+/* Change tous les input (champs formulaires) */
+
+input {
+    font-style: italic;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+/* Change la partie responsable */
+
+.responsable {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+
+/* Prend tous les input (champs) de la class poste */
+
+.poste>input {
+    width: 12.5em;
+}
+
+
+/* Prend tous les input (champ) de la class responsable */
+
+.responsable>input {
+    width: 12.5em;
+}
+
+
+/* Change la partie raison sociale */
+
+.raison_sociale {
+    margin-bottom: 1em;
+    width: 9.5em;
+}
+
+
+/* Change le style du bouton envoyer */
+
+.bouton_envoyer {
+    font-style: normal;
+    background-color: #136F63;
+    color: white;
+    border-radius: 0.5em;
+    margin-bottom: 5em;
+    width: 8em;
+    height: 2.5em;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+
+/* Quand on survole le bouton envoyer */
+
+.bouton_envoyer:hover {
+    background-color: #029f56;
+}
+
+
+/* Quand on clique sur le bouton envoyer */
+
+.bouton_envoyer:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+/* Change la partie téléphone */
+
+.tel {
+    width: 21.5em;
+}
+
+
+/* Change tous les éléments input de la class email_form */
+
+.email_form>input {
+    width: 25.7em;
+}
+
+
+/* Change tous les éléments de la class input */
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Change le texte des input formulaires */
+
+.text_formulaire {
+    color: #006989;
+    float: left;
+    padding-right: 0.5em;
+    font-size: 1.1em;
+    padding-top: 1em;
+}
+
+
+/* Change la taille du nom de l'entreprise */
+
+.entreprise_nom {
+    width: 25.5em;
+}
+
+
+/* Change la position de l'interlocuteur */
+
+.interlocuteur {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+
+/* Prend tous les input de la class interlocuteur */
+
+.interlocuteur>input {
+    width: 12.6em;
+}
+
+
+/* Change la couleur des * */
+
+.étoile {
+    color: red;
+    font-size: 1.1em;
+}
+
+
+/* Change la disposition du main */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Change la disposition de toutes les sections du main */
+
+main>section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Met en forme certains input comme 1ère et 2ème lignes + countries */
+
+.input_form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    width: 8.3em;
+}
+
+
+/* Change la disposition des éléments adresse 1ère et 2ème lignes */
+
+.num_adress {
+    display: flex;
+    flex-direction: column;
+    width: 21.3em;
+}
+
+
+/* Change la taille de jour + mois + année */
+
+.date_création {
+    margin-bottom: 1em;
+    width: 8.3em;
+}
+
+
+/* Change la disposition de ville + code postal*/
+
+.ville_postal {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+
+/* Prend tous les input de la class ville_postal */
+
+.ville_postal>input {
+    width: 12.5em;
+}
+
+
+/* Change la partie Votre message */
+
+.form_message_label {
+    color: #006989;
+    float: left;
+    padding-right: 0.5em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+
+
+/* Change la case texte sous Votre message */
+
+.form_message {
+    color: #006989;
+    float: left;
+    padding-right: 0.5em;
+    font-size: 1.1em;
+    width: 19.5em;
+    height: 5em;
+    margin-bottom: 3em;
+}
+
+
+/* Change la partie fichier PDF */
+
+#file_pdf {
+    margin-bottom: 3em;
+}
+
+
+/* Partie captcha */
+
+.container.cap {
+    margin: 0px 0px 30px 0px;
+}
+
+.captcha {
+    background-color: #f9f9f9;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    color: #4c4a4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    user-select: none;
+}
+
+.text {
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 1em;
+}
+
+.spinner {
+    position: relative;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    margin: 2em 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+input[type="checkbox"]+.checkmark {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-color: #fcfcfc;
+    border: 2.5px solid #c3c3c3;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+.checkmark span {
+    content: '';
+    position: relative;
+    margin-top: -3px;
+    transform: rotate(45deg);
+    width: .75em;
+    height: 1.2em;
+    opacity: 0;
+}
+
+input[type="checkbox"]+.checkmark>span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #029f56;
+}
+
+input[type="checkbox"]+.checkmark>span:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 3px;
+    bottom: 0;
+    right: 0;
+    background-color: #029f56;
+}
+
+input[type="checkbox"]:checked+.checkmark {
+    animation: 2s spin forwards;
+}
+
+input[type="checkbox"]:checked+.checkmark>span {
+    animation: 1s fadein 1.9s forwards;
+}
+
+input[type="checkbox"]:checked+.checkmark>span:after {
+    animation: .3s bottomslide 2s forwards;
+}
+
+input[type="checkbox"]:checked+.checkmark>span:before {
+    animation: .5s rightslide 2.2s forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bottomslide {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes rightslide {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+.logo_captcha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    align-self: flex-end;
+    margin: 0.5em 1em;
+}
+
+.captchaImg {
+    height: 30px;
+    width: 30px;
+    background: url(../src/img/recaptcha.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 10px;
+}
+
+.logo_captcha p {
+    color: #9d9ba7;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 1em 0 .2em 0;
+}
+
+.logo_captcha small {
+    color: #9d9ba7;
+    margin: 0;
+    font-size: 10px;
+}
+
+@keyframes spin {
+    10% {
+        width: 0;
+        height: 0;
+        border-width: 6px;
+    }
+    30% {
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        border-width: 1em;
+        transform: rotate(0deg);
+        border-color: rgb(199, 218, 245);
+    }
+    50% {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        border-width: 4px;
+        border-color: rgb(199, 218, 245);
+        border-right-color: rgb(89, 152, 239);
+    }
+    70% {
+        border-width: 4px;
+        border-color: rgb(199, 218, 245);
+        border-right-color: rgb(89, 152, 239);
+    }
+    90% {
+        border-width: 4px;
+    }
+    100% {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        transform: rotate(720deg);
+        border-color: transparent;
+    }
+}

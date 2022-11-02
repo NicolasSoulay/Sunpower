@@ -1,0 +1,67 @@
+/* Prend 100% de l'élément parent */
+
+.img_logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Change la taille + la largeur du logo */
+
+.logo_sunpower {
+    height: 8em;
+    width: 17em;
+}
+
+
+/* Change l'espace entre les colonnes, sa disposition et la couleur (dégradé) du footer */
+
+footer {
+    background: linear-gradient(#ADEDD2, #F6F6F6, #FFFFFF);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+/* Change la disposition + l'espace entre les icones des réseaux sociaux*/
+
+.reseaux_sociaux {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5em;
+    justify-content: space-between;
+}
+
+
+/* Change la disposition + l'alignement des titres h1 (à propos de nous...) */
+
+.solution,
+.about,
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+/* Crée une ligne séparatrice bleu avec une taille sous les h1 */
+
+.footer_hr {
+    width: 3em;
+    margin: 0 0 1em;
+}
+
+
+/* Change la taille entre les colonnes + la disposition sous les h1 */
+
+.catégorie {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    margin-bottom: 1em;
+}
+
+.footer_link:hover {
+    color: #087ABD;
+}

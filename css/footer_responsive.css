@@ -1,0 +1,38 @@
+@media (max-width: 820px) {
+    /* Change l'espace entre les colonnes, sa taille et l'alignement du footer */
+    footer {
+        background: linear-gradient(#ADEDD2, #F6F6F6, #FFFFFF);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        column-gap: 3em
+    }
+    /* Change la disposition et l'alignement des titres h1 (à propos de nous...) */
+    .solution,
+    .about,
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Change la taille entre les colonnes + la taille du texte sous les h1 */
+    .catégorie {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+        margin-bottom: 1em;
+        width: 17em;
+    }
+    /* Change la taille + l'espace entre les icones des réseaux sociaux*/
+    .reseaux_sociaux {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.5em;
+        width: 80%;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,345 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1300px) {
+    .backgroundDate {
+        top: -450px;
+        font-size: 30em;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .logo {
+        width: 180px;
+        height: 60px;
+    }
+
+    .liens ul {
+        width: 380px;
+        font-size: 14px;
+    }
+
+    .openSearchBar,
+    .facebook,
+    .mail {
+        width: 30px;
+        height: 30px;
+    }
+
+    .openSearchBar.active {
+        height: 30px;
+    }
+
+    .searchBarInput.active {
+        width: 180px;
+        height: 30px;
+        padding: 10px 10px 10px 35px;
+
+    }
+
+    .titleEntreprise h1 {
+        font-size: 4em;
+    }
+
+    .titleEntreprise p {
+        font-size: 1em;
+    }
+
+    .backgroundDate {
+        top: -380px;
+        font-size: 25em;
+    }
+
+}
+
+
+@media only screen and (max-width: 852px) {
+    .logo {
+        width: 140px;
+        height: 40px;
+    }
+
+    .liens ul {
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .openSearchBar,
+    .facebook,
+    .mail {
+        width: 20px;
+        height: 20px;
+    }
+
+    .openSearchBar.active {
+        height: 20px;
+    }
+
+
+    .searchBarInput.active {
+        width: 150px;
+        height: 20px;
+        padding: 8px 8px 8px 30px;
+    }
+
+    .backgroundDate {
+        top: -350px;
+        font-size: 20em;
+    }
+
+    .partenaires {
+        margin-top: 100px;
+    }
+
+    .containerPartenaires {
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        position: relative;
+        top: -300px;
+        list-style: none;
+    }
+
+    .partenairesLogo {
+        white-space: nowrap;
+        width: 100px;
+        height: 100px;
+        animation: defilement 0s linear infinite;
+    }
+
+    .partenairesLogo.deux {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 680px) {
+    .logo {
+        width: 140px;
+        height: 40px;
+    }
+
+    .liens ul {
+        display: none;
+    }
+
+    .burguermenu {
+        width: 20px;
+        height: 20px;
+        background: url('./src/img/hambergermenu.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .sideMenu.active {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 50%;
+        height: 100vh;
+        background: #000000e3;
+    }
+
+    .sideMenuList.active {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .sideMenuList.active li {
+        width: 100%;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .sideMenuList.active li a {
+        text-decoration: none;
+        color: #f1f1f1;
+    }
+
+    .circleEmplois {
+        width: 80%;
+        height: auto;
+    }
+
+    .txtEmplois {
+        width: 80%;
+        height: 100%;
+    }
+
+    .txtEmplois h2 {
+        float: none;
+        border-right: none;
+        border-left: 2px solid #087ab6;
+        padding: 0px 10px;
+        margin: 15px 0px;
+        color: #006989;
+        font-size: 1.5em;
+        font-family: interm;
+        text-shadow: 0.03em 0.03em 0.05em rgba(0, 0, 0, 0.5);
+
+    }
+
+    .txtEmplois p {
+        float: left;
+        text-align: left;
+    }
+
+    .mapEconomie {
+        width: 70%;
+        height: 100%;
+        background: url('./src/img/map.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .txtEconomie {
+        width: 80%;
+        height: 100%;
+        margin: 250px 0px 100px 0px;
+    }
+
+    .titleDate {
+        margin-top: 850px;
+    }
+
+    .listePatrons ul li p {
+        margin-bottom: 100px;
+    }
+
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .openSearchBar,
+    .facebook,
+    .mail {
+        display: none;
+    }
+
+    .burguermenu {
+        width: 40px;
+        height: 40px;
+        margin-left: 100px;
+    }
+
+    .txtEconomie {
+        width: 80%;
+        height: 100%;
+        margin: 450px 0px 100px 0px;
+    }
+}
+
+/* DEBUT PAGE ENTREPRISE */
+
+
+@media only screen and (max-width: 768px) {
+
+    .entrepriseTitleContainer {
+        display: inline-block;
+    }
+
+    .titleEntreprise {
+        width: 100%;
+        height: auto;
+    }
+
+    .titleEntreprise h1 {
+        font-size: 5em;
+    }
+
+    .titleEntreprise p {
+        font-size: 1.5em;
+    }
+
+    .imageEntreprise {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .statistiquesEntreprise {
+        width: 100%;
+        height: 30vh;
+        margin-top: 170px;
+    }
+
+    .backgroundDate {
+        display: none;
+    }
+
+    .titleDate h3 {
+        opacity: 1;
+    }
+
+    .partenaires {
+        margin-top: 500px;
+    }
+
+    .containerPartenaires {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        flex-wrap: wrap;
+    }
+
+    .containerPartenaires li {
+        margin: 50px;
+    }
+
+}
+
+
+@media only screen and (max-width: 496px) {
+
+    .titleEntreprise h1 {
+        font-size: 4em;
+    }
+
+    .titleEntreprise p {
+        font-size: 1em;
+    }
+
+    .imageEntreprise {
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .statistiquesEntreprise {
+        width: 100%;
+        height: 30vh;
+        margin-top: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    .titleEntreprise h1 {
+        font-size: 3em;
+    }
+
+    .titleEntreprise p {
+        font-size: 0.8em;
+    }
+
+    .imageEntreprise {
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+}

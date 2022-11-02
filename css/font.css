@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: intereb;
+    src: url(../src/fonts/inter/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: interm;
+    src: url(../src/fonts/inter/Inter-Medium.ttf);
+
+}
+
+@font-face {
+    font-family: helvetica;
+    src: url(../src/fonts/Helvetica_Neue/Helvetica\ Neue\ LTW0697BlkCnObl/Helvetica\ Neue\ LTW0697BlkCnObl.otf)
+}
+
+@font-face {
+    font-family: 'Audiowide';
+    src: url('../src/fonts/Audiowide.ttf') format('truetype');
+}
+
+
+main {
+    padding-top: 80px;
+}
+
+h1 {
+    font-family: intereb;
+    font-size: 3em;
+}
+
+/* h2 {
+    color: #4A4A4A;
+    font-size: 2em;
+    font-family: intereb;
+} */
+
+h3 {
+    color: #006989;
+    font-size: 1.5em;
+    font-family: interm;
+    text-shadow: 0.03em 0.03em 0.05em rgba(0, 0, 0, 0.5);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    color: #4A4A4A;
+    font-size: 1em;
+    font-family: intereb;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+p {
+    font-family: interm;
+    color: #4A4A4A;
+    font-size: 1em;
+}
+
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: normal;
+    border: none;
+    background: linear-gradient(0deg, #F6F6F6 5%, #ADEDD2 100%);
+    border-radius: 0.5em;
+    min-height: 3em;
+    max-width: 20em;
+    max-height: fit-content;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0.2em 0.5em 0.5em rgba(0, 0, 0, 0.5);
+    color: #4A4A4A;
+    font-size: 1em;
+    font-family: intereb;
+    transition: box-shadow 0.3s, color 0.3s, background 0.3s;
+
+}
+
+.btn:hover {
+    background: linear-gradient(0deg, #8CCBF9 5%, #087ABD 100%);
+    color: #F6F6F6;
+    box-shadow: 0.3em 0.6em 0.6em rgba(0, 0, 0, 0.5);
+}
+
+.btn_container {
+    width: 100%;
+    text-align: center;
+}
+
+.hr_container {
+    display: flex;
+    justify-content: center;
+}
+
+.hr_container>hr {
+    border-radius: 0.5em;
+    width: 10em;
+    margin: 2.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-family: interm;
+}
+
+hr {
+    border: solid 0.1em #8CCBF9;
+    border-radius: 0.5em;
+    box-shadow: 0.1em 0.2em 0.5em rgba(0, 0, 0, 0.5);
+}
+
+.logo_sunpower:hover {
+    cursor: pointer;
+}

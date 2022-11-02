@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="formulaire generique">
+    <meta name="author" content="Christine PRADE, Enzo RUFFIN, Nicolas SOULAY">
+    <title>Formulaire entreprises et collectivité</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer_responsive.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" type="text/css" href="./css/entreprises_form.css">
+    <script src="./js/navbar.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Partie navbar -->
+    <div class="sideMenu">
+        <nav>
+            <ul class="sideMenuList">
+                <li><a href="./company.html">Notre Entreprise</a></li>
+                <li><a href="./map.html">Carte interactive</a></li>
+                <li><a href="./generic_form.html">Nous Contacter</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header">
+        <div class="logo" onclick="location.href='index.html';"></div>
+        <nav class="liens">
+            <ul>
+                <li><a href="./company.html">Notre Entreprise</a></li>
+                <li><a href="./map.html">Carte interactive</a></li>
+                <li><a href="./generic_form.html">Nous Contacter</a></li>
+            </ul>
+        </nav>
+        <nav class="icones">
+            <ul>
+                <li>
+                    <div class="burguermenu"></div>
+                </li>
+                <li class="searchBarContainer">
+                    <div class="openSearchBar"></div>
+                    <form id="search">
+                        <input type="search" class="searchBarInput" placeholder="Recherchez" aria-label="Rechercher parmi le contenu du site">
+                    </form>
+                </li>
+                <li>
+                    <div class="facebook"></div>
+                </li>
+                <li>
+                    <div class="mail"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin de la navbar -->
+
+    <main>
+        <hr id="hr_header">
+
+        <!-- Partie bannière "Profitez d'un devis personnalisé" -->
+        <div class="form_bannière">
+            <h1 class="h1_titre">Profitez d'un devis personnalisé !</h1>
+            <div>
+                <h3 class="h3_soustitre">Notre équipe commerciale vous répondra dans les meilleurs délais.</h3>
+            </div>
+        </div>
+
+
+        <!-- Titre renseignements syndics de copropriété -->
+        <section class="all_main">
+            <h2 class="h2_titre">Renseignements entreprises et collectivité</h2>
+
+            <!-- Partie votre entreprise + nom -->
+            <div class="input">
+                <div class="text_formulaire">Votre entreprise <span class="étoile">*</span>
+                </div>
+                <div>
+                    <input class="entreprise_nom" type="text" placeholder="Nom">
+                </div>
+
+                <!-- Bouton raison sociale -->
+                <div>
+                    <select class="raison_sociale">
+                            <option value="">Raison sociale</option>
+                        </select>
+                </div>
+            </div>
+
+            <!-- Partie adresse de l'entreprise (numéro + adresse de la rue + ville + code postal) -->
+            <div class="input">
+
+                <div class="text_formulaire">Adresse <span class="étoile">*</span>
+                </div>
+
+                <div class="num_adress">
+                    <input type="text" placeholder="Numéro + 1ère ligne adresse">
+                    <input type="text" placeholder="Adresse de la rue (2ème ligne)">
+                </div>
+                <div class="ville_postal">
+                    <input type="text" placeholder="Ville">
+                    <input type="number" placeholder="Code postal">
+                </div>
+
+                <!-- Bouton pays pour l'adresse + ville / code postal -->
+                <select id="Countries" class="input_form">
+                <option value="">Pays</option>
+                <option value="Fr">FRANCE</option>
+                <option value="Gb">UNITED KINGDOM</option>
+                <option value="It">ITALY</option>
+                <option value="Pl">POLSKA</option>
+                </select>
+            </div>
+
+            <!-- Boutons "jour" + "mois" + "année" -->
+            <div>
+                <select class="date_création">
+                        <option value="">Jour</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        
+                    </select>
+                <select class="date_création">
+                        <option value="">Mois</option>
+                        <option value="">Janvier</option>
+                        <option value="">Février</option>
+                        <option value="">Mars</option>
+                        <option value="">Avril</option>
+                        <option value="">Mai</option>
+                    </select>
+
+                <select class="date_création">
+                        <option value="">Année</option>
+                        <option value="">2010</option>
+                        <option value="">2011</option>
+                        <option value="">2012</option>
+                        <option value="">2013</option>
+                        <option value="">2014</option>
+                    </select>
+            </div>
+
+            <!-- Partie responsable du projet -->
+            <div class="input">
+                <div class="text_formulaire">Responsable du projet <span class="étoile">*</span>
+                </div>
+
+                <div class="responsable">
+                    <input type="text" placeholder="Nom">
+                    <input type="text" placeholder="Prénom">
+                </div>
+
+                <div class="poste">
+                    <input type="text" placeholder="Poste occupé">
+                </div>
+            </div>
+
+            <!-- Partie numéro tél du responsable -->
+            <div class="input">
+                <div class="text_formulaire">Téléphone <span class="étoile">*</span></div>
+
+                <div>
+                    <select class="select">
+                    </select>
+
+                    <input class="tel" type="tel" placeholder="+33 0 00 00 00 00">
+
+                </div>
+
+                <!-- Partie email du responsable -->
+            </div>
+            <div class="input">
+
+                <div class="text_formulaire">E-mail <span class="étoile">*</span>
+                </div>
+
+                <div class="email_form">
+                    <input type="text" placeholder="abc@def.com">
+                </div>
+            </div>
+
+            <!-- Partie interlocuteur / identique au responsable -->
+            <div class="input">
+                <div class="text_formulaire">Interlocuteur <span class="étoile">*</span>
+                </div>
+                <div class="checkbox-container">
+                    <input type="radio" id="checkbox_responsable">
+                    <label for="checkbox">Identique au responsable</label>
+                </div>
+                <div class="interlocuteur">
+                    <input type="text" placeholder="Nom">
+                    <input type="text" placeholder="Prénom">
+                </div>
+            </div>
+
+
+            <!-- Partie numéro tel de l'interlocuteur -->
+            <div class="input">
+                <div class="text_formulaire">Téléphone <span class="étoile">*</span></div>
+
+                <div>
+                    <select class="select">
+                        </select>
+
+                    <input class="tel" type="tel" placeholder="+33 0 00 00 00 00">
+
+                </div>
+            </div>
+
+            <!-- Partie email de l'interlocuteur -->
+            <div class="input">
+
+                <div class="text_formulaire">E-mail <span class="étoile">*</span>
+                </div>
+
+                <div class="email_form">
+                    <input type="text" placeholder="abc@def.com">
+                </div>
+            </div>
+
+
+            <!-- Partie votre message -->
+            <div class="input">
+                <label class="form_message_label">Votre message <span class="étoile">*</span>
+                </label>
+
+                <textarea class="form_message"></textarea>
+
+            </div>
+
+            <!-- Partie choisir un fichier PDF -->
+            <div class="input">
+
+                <div class="icone_pdf">
+                    <input type="file" id="file_pdf" accept=".pdf">
+                </div>
+            </div>
+
+            <!-- Captcha robot -->
+            <div class="input">
+                <div class="container cap">
+                    <div class="captcha">
+                        <div class="spinner">
+                            <label>
+                            <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
+                            <span class="checkmark"><span>&nbsp;</span></span>
+                        </label>
+                        </div>
+                        <div class="text">
+                            I'm not a robot
+                        </div>
+                        <div class="logo_captcha">
+                            <div class="captchaImg"></div>
+                            <p>reCAPTCHA</p>
+                            <small>Privacy - Terms</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bouton "envoyer" -->
+            <input class="bouton_envoyer" type="button" value="Envoyer">
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- Image logo Sunpower -->
+        <a href="./index.html" class="logo_sunpower" lang="en" role="img" aria-label="Image logo Sunpower"><img class="img_logo" src="src/img/logo_sunpower.svg" alt="logo_sunpower">
+        </a>
+
+        <!-- Première colonne "nos solutions" -->
+        <div class="solution">
+            <h4 role="text" aria-label="Titre nos solutions">Nos solutions</h1>
+
+                <!-- Crée une ligne horizontale-->
+                <hr class="footer_hr">
+
+                <!-- Class catégorie regoupe tous les textes sous les titres h4 -->
+                <div class="catégorie">
+                    <div>
+                        <a class="footer_link" href="./solar_page.html" role="link" aria-label="Accéder aux technologies de panneaux solaires">Ombrières
+                            solaires </a>
+                    </div>
+                    <div>
+                        <a class="footer_link" href="./perdu.html" role="link" aria-label="Accéder à l'électronique de puissance">Electronique de
+                            puissance</a>
+                    </div>
+                    <div>
+                        <a class="footer_link" href="./perdu.html" role="link" aria-label="Accéder à l'électronique embarqué">Electronique
+                            embarqué</a>
+                    </div>
+                    <div>
+                        <a class="footer_link" href="./perdu.html" role="link" lang="en" aria-label="Battery Management System">Battery
+                            Management
+                            System®</a>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Deuxième colonne "à propos de nous" -->
+        <div class="about">
+            <h4 role="text" aria-label="Titre a propos de nous">À propos de nous</h1>
+
+                <!-- Crée une ligne horizontale-->
+                <hr class="footer_hr">
+
+                <!-- Class catégorie regoupe tous les textes sous les titres h1 -->
+                <div class="catégorie">
+                    <div>
+                        <a class="footer_link" href="./company.html" role="link" aria-label="Accéder à nos valeurs">Nos valeurs</a>
+                    </div>
+                    <div>
+                        <a class="footer_link" href="./perdu.html" role="link" aria-label="Accéder aux innovations">Innovations</a>
+                    </div>
+                    <div>
+                        <a class="footer_link" href="./perdu.html" role="link" aria-label="Accéder aux termes général de ventes">Termes
+                            général de
+                            ventes</a>
+                    </div>
+                    <div>
+                        <a class="footer_link" href="./perdu.html" role="link" aria-label="Accéder aux mentions légales">Mentions
+                            légales</a>
+                    </div>
+                    <div>
+                        <a class="footer_link" href="./perdu.html" role="link" aria-label="Accéder à nos partenaires">Nos
+                            partenaires</a>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Troisème colonne "contactez-nous" + réseaux sociaux -->
+        <div class="contact">
+            <h4 role="text" aria-label="Titre contactez-nous">Contactez-nous</h1>
+
+                <!-- Crée une ligne horizontale-->
+                <hr class="footer_hr">
+
+                <!-- Class catégorie regoupe tous les textes sous les titres h1 -->
+                <div class="catégorie">
+                    <div><a class="footer_link" href="./perdu.html" role="link" aria-label="Accéder à l'onglet contact">Contact</a>
+                    </div>
+                    <div><a class="footer_link" href="./perdu.html" role="link" aria-label="Accéder à l'onglet emploi">Emploi</a></div>
+                    <div><a class="footer_link" href="./perdu.html" role="link" aria-label="Accéder à l'onglet actualités">Actualités</a></div>
+                </div>
+
+                <!-- Regroupe les 3 images des réseaux sociaux (Ytb, Fb, Mail) -->
+                <div class="reseaux_sociaux" role="contentinfo" aria-label="Icones réseaux sociaux">
+                    <div class="icon_youtube">
+                        <a class="footer_link" href="./perdu.html" role="link" aria-label="Accéder au lien Youtube"><img src="src/img/playcircle.svg" alt="icone_youtube"></a>
+                    </div>
+                    <div class="icon_facebook">
+                        <a class="footer_link" href="./perdu.html" role="link" aria-label="Accéder au lien Facebook"><img src="src/img/facebook.svg" alt="icone_facebook"></a>
+                    </div>
+                    <div class="icon_mail">
+                        <a class="footer_link" href="./perdu.html" role="link" aria-label="Accéder au lien Mail"><img src="src/img/sms.svg" alt="icone_mail"></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <script src="js/formulaire.js"></script>

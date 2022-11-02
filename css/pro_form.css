@@ -1,0 +1,51 @@
+main {
+    background: linear-gradient(0deg, #F6F6F6 75%, #ADEDD2 100%);
+}
+
+.form_bannière {
+    text-align: center;
+}
+
+.h1_titre {
+    font-style: normal;
+    color: #4A4A4A;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    padding-top: 0.5em;
+}
+
+.h3_soustitre {
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    color: #4A4A4A;
+    font-size: 1em;
+    font-family: intereb;
+    text-shadow: none;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.btn_frame {
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn_select {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-top: 10em;
+    margin-bottom: 20em;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn{
+    text-align: center;
+    width: 15em;
+}

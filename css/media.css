@@ -1,0 +1,133 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+    .logo {
+        width: 180px;
+        height: 60px;
+    }
+
+    .liens ul {
+        width: 380px;
+        font-size: 14px;
+    }
+
+    .openSearchBar,
+    .facebook,
+    .mail {
+        width: 30px;
+        height: 30px;
+    }
+
+    .openSearchBar.active {
+        height: 30px;
+    }
+
+    .searchBarInput.active {
+        width: 180px;
+        height: 30px;
+        padding: 10px 10px 10px 35px;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 852px) {
+    .logo {
+        width: 140px;
+        height: 40px;
+    }
+
+    .liens ul {
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .openSearchBar,
+    .facebook,
+    .mail {
+        width: 20px;
+        height: 20px;
+    }
+
+    .openSearchBar.active {
+        height: 20px;
+    }
+
+
+    .searchBarInput.active {
+        width: 150px;
+        height: 20px;
+        padding: 8px 8px 8px 30px;
+    }
+
+}
+
+
+@media only screen and (max-width: 680px) {
+    .logo {
+        width: 140px;
+        height: 40px;
+    }
+
+    .liens ul {
+        display: none;
+    }
+
+    .burguermenu {
+        width: 20px;
+        height: 20px;
+        background: url('../src/img/hambergermenu.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .sideMenu.active {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 50%;
+        height: 100vh;
+        background: #000000e3;
+    }
+
+    .sideMenuList.active {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .sideMenuList.active li {
+        width: 100%;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .sideMenuList.active li a {
+        text-decoration: none;
+        color: #f1f1f1;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .openSearchBar,
+    .facebook,
+    .mail {
+        display: none;
+    }
+
+    .burguermenu {
+        width: 40px;
+        height: 40px;
+        margin-left: 100px;
+    }
+}
